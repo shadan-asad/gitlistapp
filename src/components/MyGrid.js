@@ -32,6 +32,7 @@ export default function MyGrid() {
             onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
             rowsPerPageOptions={[8, 10, 20]}
             onCellClick = {(e) => { window.open(e.row.url, "_blank") }}
+            rowHeight = { 54.1 }
           />
         </div>
       </div>
