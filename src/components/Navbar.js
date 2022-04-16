@@ -18,7 +18,7 @@ export default function Navbar() {
             sx={{ mr: 2 }}
           >
           </IconButton>
-          <Typography variant="h3" component="div" sx={{ flexGrow: 1 }} padding={2}>
+          <Typography variant="h3" component="div" sx={{ flexGrow: 1, fontWeight: 'bold' }} padding={2}>
             Trending Git List
           </Typography>
         </Toolbar>
