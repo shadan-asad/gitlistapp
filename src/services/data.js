@@ -2,7 +2,8 @@ import { keyframes } from "@emotion/react";
 import axios from "axios"
 
 export const getData = async () => {
-    let response = await axios.get("https://api.github.com/search/repositories?q=language:Javascript&sort=stars&order=desc");
+    
+    let response = await axios.get("https://api.github.com/search/repositories?q=language:Javascript&sort=stars&order=desc&page=1&per_page=100")
     let data = response.data.items
 
     let newdata = []

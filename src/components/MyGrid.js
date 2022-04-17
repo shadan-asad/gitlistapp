@@ -17,8 +17,8 @@ export default function MyGrid() {
         { field: 'owner', headerName: 'Owner', width: 150 },
         { field: 'stargazers_count', headerName: 'Stars Count', width: 150 },
         { field: 'forks_count', headerName: 'Number of Forks', width: 150 },
-        { field: 'language', headerName: 'Language', width: 150 },
-        { field: 'description', headerName: 'Description', width: 650 }
+        { field: 'language', headerName: 'Language', width: 150, sortable: false },
+        { field: 'description', headerName: 'Description', width: 650, sortable: false }
     ];
   
   return (
@@ -30,7 +30,7 @@ export default function MyGrid() {
             rows = { data } 
             pageSize={ pageSize }
             onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
-            rowsPerPageOptions={[8, 10, 20]}
+            rowsPerPageOptions={[8, 15, 25, 50]}
             onCellClick = {(e) => { window.open(e.row.url, "_blank") }}
             rowHeight = { 54.1 }
           />
